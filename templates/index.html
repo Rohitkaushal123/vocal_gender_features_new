@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Uploade Audio file(.wax or .mp3)</h2>
+    <form action="" method="post" enctype="multipart/form-data">
+        <input type="file" name="audio" accept=".wav, .mp3" required>
+        <input type="submit" value="predict Gender">
+    </form>
+     {% if result %}
+    <h3>Prediction: {{ result }}</h3>
+    {% endif %}
+    
+</body>
+</html>
